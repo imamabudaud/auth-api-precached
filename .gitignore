@@ -22,7 +22,9 @@ go.work
 .env.local
 
 # Keys directory
-keys/
+keys/private.pem
+keys/public.pem
+
 
 # IDE files
 .vscode/

@@ -98,31 +98,8 @@ This is required if you want to run load test
 
 ## Configuration
 
-Environment variables in `.env`:
-
-```bash
-# Database
-DB_HOST=localhost
-DB_PORT=3306
-DB_USER=root
-DB_PASSWORD=root
-DB_NAME=auth
-
-# Redis
-REDIS_HOST=localhost
-REDIS_PORT=6379
-
-# JWT
-JWT_EXPIRATION=1h
-
-# Features
-CACHE_ENABLED=true
-PRECACHE_ENABLED=true
-
-# Precache
-BATCH_SIZE=1000
-CRON_SCHEDULE="* * * * *"
-```
+Environment variables in `.env`, adjust it accordingly.
+Some configuration are hardcoded to make the code simpler for the sake of simulation.
 
 ## API Endpoints
 
