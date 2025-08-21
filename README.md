@@ -148,22 +148,6 @@ CRON_SCHEDULE="* * * * *"
 }
 ```
 
-#### Quick Test Commands
-
-**Auth Basic Service (Port 8080):**
-```bash
-curl -X POST http://localhost:8080/login \
-  -H "Content-Type: application/json" \
-  -d '{"username":"user@katakode.com","password":"123"}'
-```
-
-**Auth Improved Service (Port 8081):**
-```bash
-curl -X POST http://localhost:8081/login \
-  -H "Content-Type: application/json" \
-  -d '{"username":"user@katakode.com","password":"123"}'
-```
-
 **Test with the seeded user:**
 ```bash
 # First, seed a test user
