@@ -1,0 +1,49 @@
+# DOCKER STATS 
+```
+CONTAINER ID   NAME                          CPU %     MEM USAGE / LIMIT     MEM %     NET I/O           BLOCK I/O         PIDS
+9d660747a10b   substack-cache-auth-redis-1   2.44%     496.8MiB / 3.814GiB   12.72%    237MB / 8.24MB    5.08MB / 204MB    7
+ab9715681874   substack-cache-auth-mysql-1   16.43%    694.9MiB / 3.814GiB   17.79%    5.3MB / 118MB     466MB / 15.5MB    46
+```
+
+# K6 RESULTS
+```
+   █ THRESHOLDS
+
+    http_req_duration
+    ✓ 'p(95)<500' p(95)=69.94ms
+
+    http_req_failed
+    ✓ 'rate<0.1' rate=0.00%
+
+
+  █ TOTAL RESULTS
+
+    checks_total.......: 17036   94.376945/s
+    checks_succeeded...: 100.00% 17036 out of 17036
+    checks_failed......: 0.00%   0 out of 17036
+
+    ✓ status is 200 or 401
+    ✓ response time < 500ms
+
+    HTTP
+    http_req_duration..............: avg=61.72ms min=54.35ms med=59.97ms max=171.33ms p(90)=66.18ms p(95)=69.94ms
+      { expected_response:true }...: avg=61.72ms min=54.35ms med=59.97ms max=171.33ms p(90)=66.18ms p(95)=69.94ms
+    http_req_failed................: 0.00%  0 out of 8518
+    http_reqs......................: 8518   47.188472/s
+
+    EXECUTION
+    iteration_duration.............: avg=1.06s   min=1.05s   med=1.06s   max=1.17s    p(90)=1.06s   p(95)=1.07s
+    iterations.....................: 8518   47.188472/s
+    vus............................: 1      min=1         max=100
+    vus_max........................: 100    min=100       max=100
+
+    NETWORK
+    data_received..................: 5.7 MB 31 kB/s
+    data_sent......................: 1.6 MB 9.1 kB/s
+
+
+
+
+running (3m00.5s), 000/100 VUs, 8518 complete and 0 interrupted iterations
+default ✓ [======================================] 000/100 VUs  3m0s
+```

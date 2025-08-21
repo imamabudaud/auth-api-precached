@@ -22,8 +22,7 @@ go.work
 .env.local
 
 # Keys directory
-keys/private.pem
-keys/public.pem
+keys/
 
 # IDE files
 .vscode/
@@ -41,8 +40,3 @@ Thumbs.db
 # Temporary files
 tmp/
 temp/
-
-auth-basic-bin 
-auth-improved-bin 
-precache-worker-bin
-seeder-bin 
