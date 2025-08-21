@@ -40,3 +40,8 @@ Thumbs.db
 # Temporary files
 tmp/
 temp/
+
+# Binaries
+auth-basic-bin
+auth-improved-bin
+precache-worker-bin
